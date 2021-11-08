@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Orbitron:wght@500&display=swap');
+
+* {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+.calcGrid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-height: 630px;
+    max-width: 400px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    border: solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    background-color: #bee3db;
+}
+
+button {
+    margin: 7px;
+    border-radius: 15px;
+    background-color: #89b0ae;
+}
+
+button:hover {
+    background-color: #bee3db;
+}
+.spanTwo {
+    grid-column: span 2;
+}
+
+.displayOutput {
+    margin: 5px;
+    border: solid black;
+    border-radius: 20px;
+    grid-column: 1 /-1;
+    background-color: #edf6f9;
+}
+
+img {
+    min-height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
