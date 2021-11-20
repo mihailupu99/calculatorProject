@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .calcGrid {
@@ -26,6 +26,8 @@ button {
     margin: 7px;
     border-radius: 15px;
     background-color: #89b0ae;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -37,10 +39,18 @@ button:hover {
 
 .displayOutput {
     margin: 5px;
+    padding: 10px;
+    font-size: 35px;
     border: solid black;
     border-radius: 20px;
     grid-column: 1 /-1;
     background-color: #edf6f9;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 img {
@@ -49,4 +59,14 @@ img {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+.displayOutput .currentOperand {
+    font-size: 2.5rem;
+    color: #023e8a;
+}
+
+.displayOutput .previousOperand {
+    font-size: 1.5rem;
+    color: #2d6a4f;
 }

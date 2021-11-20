@@ -11,11 +11,11 @@
         <img src="images/backgroundimage2.webp" />
         <div class="calcGrid">
             <div class="displayOutput">
-                <div data-previous-operand class="previous-operand">5555</div>
-                <div data-current-operand class="current-operand">3333</div>
+                <div id="lastNumberScreen" class="previousOperand"></div>
+                <div id="currentNumberScreen" class="currentOperand">0</div>
             </div>
-            <button data-all-clear class="spanTwo">ClSc</button>
-            <button data-delete>Delete</button>
+            <button id="clearScreen" class="spanTwo">ClSc</button>
+            <button id="delete">Del</button>
             <button data-operation>÷</button>
 
             <button data-number>7</button>
@@ -33,9 +33,9 @@
             <button data-number>3</button>
             <button data-operation>+</button>
 
-            <button data-number>.</button>
+            <button id="dot">.</button>
             <button data-number>0</button>
-            <button data-equals class="spanTwo">=</button>
+            <button id="equal" class="spanTwo">=</button>
         </div>
 
         <script src="app.js"></script>
